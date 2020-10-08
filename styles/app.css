@@ -2,7 +2,7 @@
 
 @import './_typography.css';
 @import './_header.css';
-@import './_title.css';
+@import './title.css';
 @import './_cards.css';
 @import './_info.css';
 @import './_links.css';
