@@ -1,11 +1,10 @@
 .nav-header {
+    align-items: center;
     background: var(--background-color-second);
     color: var(--background-color);
-    font-weight: bold;
     display: flex;
+    font-weight: bold;
     justify-content: space-around;
-    align-items: center;
     padding:2rem;
     margin-bottom:2rem;
-   
 }
