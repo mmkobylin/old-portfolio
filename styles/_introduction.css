@@ -1,0 +1,19 @@
+.introduction { 
+    background: var(--background-color);
+    border: solid 1rem var(--border-color);
+    border-radius: 3rem;
+    padding:1.5rem;
+    margin:2rem;
+    margin-top:3rem;
+    margin-bottom:4rem;
+    text-align: left;
+}
+
+
+@media screen and (min-width:700px) {
+    .introduction{
+        display: flex;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}

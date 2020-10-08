@@ -1,0 +1,17 @@
+.skills {
+    line-height: 2rem;;
+
+}
+
+@media screen and (min-width:700px) {
+
+    .skills {
+        box-sizing:border-box;
+        float: left;
+        width: 25%;
+        margin:0;
+        margin-bottom:3rem;
+        line-height: 2rem;
+    }
+    
+}

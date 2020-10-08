@@ -1,0 +1,13 @@
+a {
+    color:var(--background-color-second);
+    text-decoration: none;
+    font-weight:bolder; 
+    padding:1.5rem;
+}
+
+h2:active, h2:hover,
+h3:active, h3:hover,
+a:active, a:hover {
+    color:#EC4C77;
+
+};

@@ -1,0 +1,10 @@
+footer {
+    background: var(--background-color-second);
+    color: var(--background-color);
+    font-size: 1.5rem;
+    align-items: center;
+    padding:3rem;
+    margin-top:3rem;
+    clear: both;
+}
+

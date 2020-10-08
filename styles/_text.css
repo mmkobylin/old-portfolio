@@ -1,0 +1,17 @@
+.text {
+    border-radius: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width:700px) {
+
+    .text{
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        line-height: 4rem;
+        margin:3rem;
+    }
+}
