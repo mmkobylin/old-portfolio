@@ -61,9 +61,6 @@ footer {
     margin-top:3rem;
 }
 
-.image-code {
-}
-
 .images {
     border: solid 0.4 var(--background-color-second);
     border-radius: 1.5rem;
@@ -92,17 +89,6 @@ h3, h4{
     color: var(--link-color);   
 }
 
-.nav-header {
-    align-items: center;
-    background: var(--background-color-second);
-    color: var(--background-color);
-    display: flex;
-    font-weight: bold;
-    justify-content: space-around;
-    padding:2rem;
-    margin-bottom:2rem;
-}
-
 .introduction { 
     background: var(--background-color);
     border: solid 1rem var(--border-color);
@@ -113,7 +99,6 @@ h3, h4{
     margin-top:3rem;
     text-align: left;
 }
-
 
 .links {
     font-family: var(--font-secondary); 
@@ -126,6 +111,18 @@ h3, h4{
     padding:1rem;
     margin:2rem;
 }
+
+.nav-header {
+    align-items: center;
+    background: var(--background-color-second);
+    color: var(--background-color);
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    padding:2rem;
+    margin-bottom:2rem;
+}
+
 
 .skills {
     line-height: 2rem;;
@@ -150,6 +147,24 @@ ul {
 
 @media screen and (min-width:700px) {
 
+    .images {
+        width: 7rem;
+        height: 7rem;
+        object-fit:cover;
+        margin:0.5rem;
+    }
+    
+    .image-code {
+        display: none;
+    }
+}
+
+@media screen and (min-width:700px) {
+    *{
+        font-size:1.3rem;
+        margin:0;  
+    }
+
     .card-left {
         float: left; 
         width: 30%; 
@@ -164,20 +179,6 @@ ul {
         display: inline-block; 
         width: 30%; 
       
-    }
-
-    .images {
-        width: 7rem;
-        height: 7rem;
-        object-fit:cover;
-        margin:0.5rem;
-    }
-}
-
-@media screen and (min-width:700px) {
-    *{
-        font-size:1.3rem;
-        margin:0;  
     }
 
     h1 {
@@ -196,8 +197,6 @@ ul {
         border-radius: 3rem;
         display: flex;
         float: right;
-        height:100%;
-        width:90%;
     }
 
     .introduction{
@@ -237,6 +236,13 @@ ul {
         line-height: 2rem;
     }
 }
+
+@media screen and (max-width:1199px) {
+    .image-code {
+        display: none;
+    }
+}
+
 @media screen and (min-width:1200px) {
     .images {
         width:13rem;
