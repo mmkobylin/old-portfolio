@@ -42,22 +42,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-@import '/src/css/_settings.css'; 
-@import '/src/css/_typography.css';
-@import '/src/css/_header.css';
-@import '/src/css/title.css';
-@import '/src/css/_cards.css';
-@import '/src/css/_info.css';
-@import '/src/css/_links.css';
-@import '/src/css/_body.css';
-@import '/src/css/_nav-header.css';
-@import '/src/css/_introduction.css';
-@import '/src/css/_footer.css';
-@import '/src/css/_projects.css';
-@import '/src/css/_skills.css';
-@import '/src/css/_lists.css';
-@import '/src/css/_image.css';
-@import '/src/css/_text.css';
- 
+/* @import '_settings.css';
+
+@import './_typography.css';
+@import './_header.css';
+@import './title.css';
+@import './_cards.css';
+@import './_info.css';
+@import './_links.css';
+@import './_body.css';
+@import './_nav-header.css';
+@import './_introduction.css';
+@import './_footer.css';
+@import './_projects.css';
+@import './_skills.css';
+@import './_lists.css';
+@import './_image.css';
+@import './_text.css';
+ */
+
 
 
