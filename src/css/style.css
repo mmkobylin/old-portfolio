@@ -61,8 +61,17 @@ footer {
     margin-top:3rem;
 }
 
+.image-code {
+}
+
 .images {
-    display: none;
+    border: solid 0.4 var(--background-color-second);
+    border-radius: 1.5rem;
+    width:12rem;
+    height: 12rem;
+    object-fit:cover;
+    margin:2rem;
+    text-align: center;  
 }
 
 h1, h2 {
@@ -146,15 +155,22 @@ ul {
         width: 30%; 
  
     }
-    .card-right {
+    .card-center {
         float: right; 
         width: 30%; 
  
     }
-    .card-center{ 
+    .card-right{ 
         display: inline-block; 
         width: 30%; 
       
+    }
+
+    .images {
+        width: 7rem;
+        height: 7rem;
+        object-fit:cover;
+        margin:0.5rem;
     }
 }
 
@@ -176,7 +192,7 @@ ul {
         margin-bottom:1.5rem;
     }
 
-    .images {
+    .image-code {
         border-radius: 3rem;
         display: flex;
         float: right;
@@ -219,6 +235,14 @@ ul {
         margin:0;
         margin-bottom:3rem;
         line-height: 2rem;
+    }
+}
+@media screen and (min-width:1200px) {
+    .images {
+        width:13rem;
+        height:13rem;
+        object-fit:cover;
+        margin:1rem;
     }
 }
 
