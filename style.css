@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 @import '/src/css/_footer.css';
 @import '/src/css/_projects.css';
 @import '/src/css/_skills.css';
-@import '/src/css/_lists.css';
+@import '/src/css/lists.css';
 @import '/src/css/_image.css';
 @import '/src/css/_text.css';
  
