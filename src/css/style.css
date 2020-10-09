@@ -26,11 +26,6 @@
     line-height: 2rem;
     margin:0;
     text-align: center;
-
-}
-
-a {
-    padding:1rem;
 }
 
 a:active, a:hover {
@@ -43,8 +38,6 @@ body {
     color: var(--font-color);
     font-family: var(--font-secondary); 
     font-size: 1.35rem;
-    margin:0;
-    text-align: center;
 }
 
 .card { 
@@ -110,6 +103,7 @@ h3, h4 {
 
 .links {
     font-family: var(--font-secondary); 
+    padding:1rem;
 }
 
 .main-info {
@@ -202,7 +196,6 @@ ul {
     .card-right{ 
         display: inline-block; 
         width: 30%; 
-      
     }
 
     h1 {
