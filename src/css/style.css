@@ -64,18 +64,18 @@ footer {
 .images {
     border: solid 0.4 var(--background-color-second);
     border-radius: 1.5rem;
-    width:12rem;
     height: 12rem;
-    object-fit:cover;
     margin:2rem;
+    object-fit:cover;
     text-align: center;  
+    width:12rem;
 }
 
 h1, h2 {
+    color: var(--link-color);
     font-size: 1.4rem;
     line-height: 4rem;
     margin:0.6rem;
-    color: var(--link-color);
 }
 
 h2:active, h2:hover,
@@ -84,9 +84,9 @@ h3:active, h3:hover {
 };
 
 h3, h4{
+    color: var(--link-color);   
     font-size: 1.6rem;
     margin:2rem;
-    color: var(--link-color);   
 }
 
 .introduction { 
@@ -125,8 +125,7 @@ h3, h4{
 
 
 .skills {
-    line-height: 2rem;;
-
+    line-height: 2rem;
 }
 
 .text {
@@ -143,20 +142,6 @@ ul {
     border-radius: 3rem;
     padding:1rem;
     margin:2rem;
-}
-
-@media screen and (min-width:700px) {
-
-    .images {
-        width: 7rem;
-        height: 7rem;
-        object-fit:cover;
-        margin:0.5rem;
-    }
-    
-    .image-code {
-        display: none;
-    }
 }
 
 @media screen and (min-width:700px) {
@@ -192,11 +177,11 @@ ul {
         margin-top:1.5rem;
         margin-bottom:1.5rem;
     }
-
-    .image-code {
-        border-radius: 3rem;
-        display: flex;
-        float: right;
+    .images {
+        height: 7rem;
+        object-fit:cover;
+        margin:0.5rem;
+        width: 7rem;
     }
 
     .introduction{
@@ -211,8 +196,8 @@ ul {
     }
     
     .text{
-        display: flex;
         align-items:center;
+        display: flex;
         justify-content: flex-end;
         line-height: 4rem;
         margin:3rem;
@@ -221,19 +206,19 @@ ul {
     .card {
         box-sizing:border-box;
         float: center;
-        width: 30%;
         margin:0.5rem;
         margin-bottom:3rem;
         line-height: 2rem;
+        width: 30%;
     }
 
     .skills {
         box-sizing:border-box;
         float: left;
-        width: 25%;
+        line-height: 2rem;
         margin:0;
         margin-bottom:3rem;
-        line-height: 2rem;
+        width: 25%;
     }
 }
 
@@ -245,10 +230,11 @@ ul {
 
 @media screen and (min-width:1200px) {
     .images {
-        width:13rem;
         height:13rem;
-        object-fit:cover;
         margin:1rem;
+        object-fit:cover;
+        width:13rem;
+
     }
 }
 
@@ -256,9 +242,10 @@ ul {
 
     .image-code {
         height:23rem;
-        width:23rem;
-        object-fit:cover;
         margin:1rem;
+        object-fit:cover;
+        width:23rem;
+
     }
 }
 
