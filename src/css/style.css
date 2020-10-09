@@ -246,6 +246,16 @@ ul {
     }
 }
 
+@media screen and (min-width:1300px) {
+
+    .image-code {
+        height:23rem;
+        width:23rem;
+        object-fit:cover;
+        margin:1rem;
+    }
+}
+
 @import '_settings.css';
 
 @import './_typography.css';
