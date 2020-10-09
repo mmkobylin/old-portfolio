@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Enriqueta:wght@500&family=Zilla+Slab:wght@500&display=swap");
 
 :root {
+
+    --active-color: #EC4C77;
+
+
     --background-color-second: #22B2A5;
 
     --background-color: #FFF0E9;
@@ -9,13 +13,20 @@
     
     --border-color: #4A4A4A; 
 
-    --font-secondary: 'Zilla Slab', serif;
-
     --font-primary: 'Enriqueta', serif;
+
+    --font-secondary: 'Zilla Slab', serif;
 
     --link-color: #551A8B;
 
 }
+*{
+    text-align: center;
+}
+a:active, a:hover {
+    color: var(--active-color);
+
+};
 
 body {
     background:var(--body-color);
@@ -23,23 +34,177 @@ body {
     font-family: var(--font-secondary); 
     font-size: 1.35rem;
     margin:0;
-    text-align:center;
+    text-align: center;
+}
+
+.card { 
+    background: var(--background-color);
+    border: double 1rem var(--border-color);
+    border-radius: 3rem;
+    padding:1rem;
+    padding-bottom:3rem;
+    margin:1.5rem;
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    background: var(--background-color-second);
+    clear: both;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    padding:3rem;
+    margin-top:3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+
 };
 
-.paragraph {
-    font-family: var(--font-secondary);
+h1, h2 {
+    font-size: 1.5rem;
+    margin:2rem;
+    color: var(--link-color);
+    line-height: 4rem;
 }
+
+h2 {
+    font-size: 1.6rem;
+}
+
+
+h2:active, h2:hover,
+h3:active, h3:hover {
+    color: var(--active-color);
+};
+
+h3, h4{
+    font-size: 1.5rem;
+    margin:2rem;
+    color: var(--link-color);   
+}
+
+.introduction { 
+    background: var(--background-color);
+    border: solid 1rem var(--border-color);
+    border-radius: 3rem;
+    padding:1.5rem;
+    margin:2rem;
+    margin-bottom:4rem;
+    margin-top:3rem;
+    text-align: left;
+}
+
 
 .links {
     font-family: var(--font-secondary); 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--base-font-color);
-    font-family: var(--font-primary);
+.main-info {
+    background: var(--background-color);
+    border: double 1rem var(--border-color);
+    border-radius: 3rem;
+    padding:1rem;
+    margin:2rem;
+}
 
-};
 
+.paragraph {
+    font-family: var(--font-secondary);
+}
+
+.skills {
+    line-height: 2rem;;
+
+}
+
+.text {
+    border-radius: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+ul { 
+    list-style-type: none;
+    background: var(--background-color);
+    border: solid 1rem var(--background-color-second);
+    border-radius: 3rem;
+    padding:1rem;
+    margin:2rem;
+}
+
+
+@media screen and (min-width:700px) {
+
+    .card {
+        margin: 0rem;
+        padding:2rem;
+    }
+
+    .card-left {
+        float: left; 
+        width: 25%; 
+    }
+    .card-right {
+        float: right; 
+        width: 25%; 
+    }
+    .card-center{ 
+        display: inline-block; 
+        width: 25%; 
+    }
+
+    h1 {
+        font-size:3.5rem;
+        line-height: 5.6rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        padding-bottom:2rem;
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+    
+    }
+
+    .images {
+        border-radius: 3rem;
+        display: flex;
+        float: right;
+        height:100%;
+        width:90%;
+    }
+
+    .introduction{
+        display: flex;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .main-info {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+    
+    .text{
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        line-height: 4rem;
+        margin:3rem;
+    }
+
+    .skills {
+        box-sizing:border-box;
+        float: left;
+        width: 25%;
+        margin:0;
+        margin-bottom:3rem;
+        line-height: 2rem;
+    }
+}
 
 @import '_settings.css';
 
@@ -58,5 +223,3 @@ h1, h2, h3, h4, h5, h6 {
 @import './lists.css';
 @import './_image.css';
 @import './_text.css';
-
-
