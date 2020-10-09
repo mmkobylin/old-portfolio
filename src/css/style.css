@@ -139,7 +139,7 @@ ul {
     margin:2rem;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:700px) {
 
     .card-left {
         float: left; 
