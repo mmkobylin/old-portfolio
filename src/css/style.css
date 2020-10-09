@@ -21,7 +21,7 @@
 }
 *{
     text-align: center;
-    font-family:var(--font-primary);
+    font-family:var(--font-secondary);
     font-size:1rem;
     margin:0;
 }
@@ -31,7 +31,7 @@ a:active, a:hover {
 };
 
 body {
-    background:var(--body-color);
+    background:#dfd0c9; 
     color: var(--font-color);
     font-family: var(--font-secondary); 
     font-size: 1.35rem;
@@ -64,6 +64,7 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: var(--link-color);
     font-family: var(--font-primary);
 
 };
@@ -71,7 +72,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
     font-size: 4rem;
     margin:2rem;
-    color: var(--link-color);
     line-height: 5rem;
 }
 
@@ -150,9 +150,7 @@ ul {
 @media screen and (min-width:700px) {
     *{
         font-size:1.3rem;
-        line-height: 3.5rem;
-        margin:0;
-        
+        margin:0;  
     }
     .card {
         margin: 0rem;
@@ -173,8 +171,8 @@ ul {
     }
 
     h1 {
-        font-size:3.5rem;
-        line-height: 5.6rem;
+        font-size: 3.5rem;
+        line-height: 7rem;
     }
     
     h2 {
@@ -182,9 +180,7 @@ ul {
         padding-bottom:2rem;
         margin-top:1.5rem;
         margin-bottom:1.5rem;
-    
     }
-
 
     .images {
         border-radius: 3rem;
