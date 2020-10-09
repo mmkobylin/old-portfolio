@@ -139,28 +139,29 @@ ul {
     margin:2rem;
 }
 
+@media screen and (min-width:800px) {
+
+    .card-left {
+        float: left; 
+        width: 30%; 
+ 
+    }
+    .card-right {
+        float: right; 
+        width: 30%; 
+ 
+    }
+    .card-center{ 
+        display: inline-block; 
+        width: 30%; 
+      
+    }
+}
 
 @media screen and (min-width:700px) {
     *{
         font-size:1.3rem;
         margin:0;  
-    }
-    .card {
-        margin: 0rem;
-        padding:2rem;
-    }
-
-    .card-left {
-        float: left; 
-        width: 20%; 
-    }
-    .card-right {
-        float: right; 
-        width: 20%; 
-    }
-    .card-center{ 
-        display: inline-block; 
-        width: 20%; 
     }
 
     h1 {
@@ -200,6 +201,15 @@ ul {
         justify-content: flex-end;
         line-height: 4rem;
         margin:3rem;
+    }
+
+    .card {
+        box-sizing:border-box;
+        float: center;
+        width: 30%;
+        margin:0.5rem;
+        margin-bottom:3rem;
+        line-height: 2rem;
     }
 
     .skills {
