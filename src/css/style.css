@@ -41,8 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 };
 
 
-
-/* @import '_settings.css';
+@import '_settings.css';
 
 @import './_typography.css';
 @import './_header.css';
@@ -59,7 +58,5 @@ h1, h2, h3, h4, h5, h6 {
 @import './_lists.css';
 @import './_image.css';
 @import './_text.css';
- */
-
 
 
