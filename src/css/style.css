@@ -281,12 +281,33 @@ ul {
 }
 
 
+@media screen and (min-width:1400px) {
+
+    
+    .abilities {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+
+        text-align: center;
+    }
+    
+    .skills {
+        line-height: 2rem;   
+        display: inline-grid;
+        justify-items: center;
+        align-items: center;
+    }
+    
+}
+
 @media screen and (min-width:900px) {
 
     .abilities {
     
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
         grid-template-rows: 1fr 1fr;
         text-align: center;
     }
@@ -304,25 +325,6 @@ ul {
 
     ul {
         width: 25rem;
-    }
-    
-}
-
-@media screen and (min-width:1400px) {
-
-    
-    .abilities {
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        text-align: center;
-    }
-    
-    .skills {
-        line-height: 2rem;   
-        display: inline-grid;
-        justify-items: center;
-        align-items: center;
     }
     
 }
