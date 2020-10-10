@@ -280,9 +280,9 @@ ul {
     }
 }
 
+
 @media screen and (min-width:900px) {
 
-        
     .abilities {
     
         display: grid;
@@ -297,7 +297,34 @@ ul {
         justify-items: center;
         align-items: center;
     }
+}
 
+
+@media screen and (min-width:701px) and (max-width: 899px) {
+
+    ul {
+        width: 25rem;
+    }
+    
+}
+
+@media screen and (min-width:1400px) {
+
+    
+    .abilities {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+    
+    .skills {
+        line-height: 2rem;   
+        display: inline-grid;
+        justify-items: center;
+        align-items: center;
+    }
+    
 }
 
 @media screen and (min-width:1200px) {
@@ -329,6 +356,8 @@ ul {
 
     }
 }
+
+
 @import '_settings.css';
 
 @import './_typography.css';
