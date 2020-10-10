@@ -185,6 +185,15 @@ ul {
         font-size:1.3rem;
         margin:0; 
     }
+    
+    .abilities {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+        text-align: center;
+    }
 
     body {
         background-color: var(--body-color); 
@@ -265,11 +274,9 @@ ul {
 
     .skills {
         box-sizing:border-box;
-        float: left;
+        float: center;
         line-height: 2rem;
-        margin:0;
-        margin-bottom:3rem;
-        width: 25%;
+        margin:2rem;
     }
 
     svg {
