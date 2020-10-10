@@ -190,6 +190,7 @@ ul {
         background-color: var(--body-color); 
     }
 
+   
     .card-left {
         float: left; 
         width: 30%; 
@@ -269,9 +270,18 @@ ul {
     }
 
     ul {
-        height: fit-content;
         width: 16rem;
     }
+
+    .hide {
+        display: none;
+      }
+    
+    .show:active + .hide {
+        display: inline;
+        height: fit-content;
+      }
+
 }
 
 @media screen and (max-width:1199px) {
