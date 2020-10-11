@@ -9,10 +9,14 @@
         <meta name="description" content="portfolio"> 
         <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600&family=Lato&family=Zilla+Slab:ital,wght@0,300;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">        
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-        #
+        <script defer src="C:\Users\mmkob\OneDrive\Documents\GitHub\mmkobylin.github.io\src\js\border.js"></script>
         <style>
             @import url('src/css/style.css');
         </style>
+<!-- 
+        <script>
+            @import url('src/js/')
+        </script> -->
     </head>
     
     <body>
@@ -124,7 +128,7 @@
                     <a href="https://github.com/mmkobylin/tech_challenge" class="links">Code (backend)</a>                   
                 </div>
                 <div class="card card-left">
-                    <h3>Photography Portfolio</h3>
+                    <h3 id="dissapear">Photography Portfolio</h3>
                     <p>HTML & CSS Project</p>
                     <figure>
                         <img src="src/assets/images/jo.png" alt="home-page image" class="images"></img>
@@ -133,17 +137,25 @@
                     <a href="https://github.com/mmkobylin/css_portfolio" class="links">Code</a>                       
                 </div>
         </article>
-       
+        <style>
+            .border {
+                height: 200px;
+                width: 200px;
+                border: 10px solid #00F;
+            }
+        </style>
+
+        <script defer src="border.js"></script>
+    </head>
+    <body class="container">
+        <header class="page-header">
+            <h1>Make Me Rederer</h1>
+        </header>
+
+        <div id="border" class="border"></div>
     </body>
 
     <footer>
         &copy; Marta Kobylinska 2020
     </footer>
 </html>
-<script>
-
-    //i firstly need to know what i am addressing;
-let susan = document.getElementById("dissapear");
-    console.log(susan);
-    
-</script>
