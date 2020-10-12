@@ -32,11 +32,9 @@
     text-align: center;
 }
 
-a:active, a:hover {
-    color: var(--active-color);
-
-};
-
+.abilities {
+    width: fit-content;
+}
 body {
     background-color: var(--body-color); 
     color: var(--font-color);
@@ -308,6 +306,7 @@ ul {
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
     }
     
     .skills {
