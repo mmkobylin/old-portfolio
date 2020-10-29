@@ -4,7 +4,8 @@ console.log("test");
 
     //getting items via Id
     let show = d.getElementById("show");
-    let hide = d.getElementById("hide-less")
+    let hideLess = d.getElementById("hide-less")
+    let hideMore = d.getElementById("hide-more")
 
     let cardDisplay = d.getElementById("test");
 
@@ -15,7 +16,8 @@ console.log("test");
     // every time the user clicks
     show.addEventListener("click", () => {
         // if display:none then set to inline, otherwise set to none
-        hide.style.display = invisible ? "inline" : "none";
+        hideLess.style.display = invisible ? "inline" : "none";
+        hideMore.style.display = invisible ? "none" : "inline";
 
         cardDisplay.style.display = invisible ? "inline" : "none";
 
