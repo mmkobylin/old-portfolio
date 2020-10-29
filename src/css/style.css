@@ -137,6 +137,11 @@ h3, h4 {
     font-size: 1rem;
 }
 
+.mail:active, .mail:hover {
+    color: var(--active-color);
+    text-decoration: underline; 
+}
+
 .nav-header {
     align-items: center;
     background: var(--background-color-second);
