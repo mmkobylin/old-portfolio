@@ -116,6 +116,11 @@ h3, h4 {
     padding:1rem;
 }
 
+.links:active, .links:hover {
+    color: var(--active-color);
+    text-decoration: underline; 
+}
+
 .main-info {
     background: var(--background-color);
     border: double 1rem var(--border-color);

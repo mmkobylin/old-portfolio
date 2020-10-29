@@ -2,21 +2,25 @@ console.log("test");
 
 ((d) => {
 
-function toggleDocs(event) {
+    //getting items via Id
+    let show = d.getElementById("show");
+    let hide = d.getElementById("hide-less")
 
-    if (event.target && event.target.className == 'skill-heading') {
+    let cardDisplay = d.getElementById("test");
 
-        var next = event.target.nextElementSibling;
+    // this is our state
+    // keep track of whether the items are showing
+    let invisible = true;
 
-        if (next.style.display == "none") {
-            next.style.display = "inline-block";
+    // every time the user clicks
+    show.addEventListener("click", () => {
+        // if display:none then set to inline, otherwise set to none
+        hide.style.display = invisible ? "inline" : "none";
 
-        } else {
-            next.style.display = "none";
-        }
-    }
-}
+        cardDisplay.style.display = invisible ? "inline" : "none";
 
-document.addEventListener('click', toggleDocs, true);
-
+        // switch the value of invisible
+        invisible = !invisible;
+    });
 })(document);
+
