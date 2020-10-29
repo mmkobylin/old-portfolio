@@ -19,4 +19,10 @@
     .card-left{ float: left; width: 25%; }
     .card-right{ float: right; width: 25%; }
     .card-center{ display: inline-block; width: 25%; }
+
+    .card-five {
+       margin-left: 10rem;
+    }
+
+
 }

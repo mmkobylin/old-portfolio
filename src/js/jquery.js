@@ -1,4 +1,4 @@
-console.log("test");
+console.log("card");
 
 ((d) => {
 
@@ -7,7 +7,7 @@ console.log("test");
     let hideLess = d.getElementById("hide-less")
     let hideMore = d.getElementById("hide-more")
 
-    let cardDisplay = d.getElementById("test");
+    let cardDisplay = d.getElementById("card");
 
     // this is our state
     // keep track of whether the items are showing
