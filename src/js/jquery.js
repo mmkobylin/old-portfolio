@@ -26,3 +26,5 @@ console.log("card");
     });
 })(document);
 
+console.log('test')
+
