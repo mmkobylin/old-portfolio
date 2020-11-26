@@ -1,5 +1,3 @@
-console.log("card");
-
 ((d) => {
 
     //getting items via Id
@@ -25,6 +23,4 @@ console.log("card");
         invisible = !invisible;
     });
 })(document);
-
-console.log('test')
 
