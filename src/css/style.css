@@ -20,7 +20,6 @@
 
     --gradient-primary: linear-gradient(var(--link-color), var(--active-color));
 
-    --gradient-secondary: linear-gradient(45deg, red, blue);
 
 }
 *{
