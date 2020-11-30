@@ -62,11 +62,12 @@ body {
 footer {
     align-items: center;
     background: var(--background-color-second);
-    clear: both;
     color: var(--background-color);
-    font-size: 1.35rem;
-    padding:3rem;
-    margin-top:3rem;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    padding:2rem;
+    margin-bottom:2rem;
 }
 
 .images {
