@@ -51,6 +51,15 @@ body {
     text-align: center;
 }
 
+.card1 { 
+    background: var(--background-color);
+    border: solid 1rem var(--background-color-second);
+    border-radius: 3rem;
+    padding:1rem;
+    margin:2rem;
+    text-align: center;
+}
+
 .card:hover, ul:hover {
     -webkit-box-shadow: 3px 18px 5px 6px rgba(0,0,0,0.69);
     -moz-box-shadow: 3px 18px 5px 6px rgba(0,0,0,0.69);
@@ -184,11 +193,6 @@ svg:active, svg:hover {
 
 ul { 
     list-style-type: none;
-    background: var(--background-color);
-    border: solid 1rem var(--background-color-second);
-    border-radius: 3rem;
-    padding:1rem;
-    margin:2rem;
 }
 
 
