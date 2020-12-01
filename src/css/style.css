@@ -30,7 +30,7 @@
 
 a:active, a:hover {
     font-weight: bold;
-    color: var(--link-color);
+    color: var(--active-color);
     font-size:1.3rem;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
     transform: translateY(-8px);
