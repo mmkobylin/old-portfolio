@@ -171,6 +171,9 @@ svg:active, svg:hover {
     text-align: center;
 }
 
+.top {
+    margin:3rem;
+}
 
 ul { 
     list-style-type: none;
