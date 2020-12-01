@@ -7,7 +7,15 @@
         <title> Marta Kobylinska Portfolio</title>
 
         <meta name="description" content="portfolio"> 
-        <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600&family=Lato&family=Zilla+Slab:ital,wght@0,300;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&family=Martel:wght@300;600;800&family=Source+Serif+Pro:wght@300;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,700;1,300;1,400&family=Castoro:ital@0;1&display=swap" rel="stylesheet">        <!-- adding sass -->
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <!-- <script src="//cdn.jsdelivr.net/npm/less" ></script>
+        <script>less = { env: 'development'};</script>
+        <script src="less.js"></script>
+        <script>less.watch();</script> -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         <script defer src="https://mmkobylin.github.io/src/js/jquery.js"></script>
 
@@ -19,26 +27,27 @@
     <body>
 
         <section class="main-info">
-            <h1>Marta Kobylinska<br>
-            Full Stack Developer</h1>
+            <a id="top">
+
+                <h1>Marta Kobylinska<br>
+                Full Stack Developer</h1>
+            </a>
+
+            <p class="text">I recently graduated from DevelopMe_ Coding Bootcamp.
+            I am passionate about writing clear and well-commented code, self-improvement and mental health awareness.
+            My background is in finance industry.<br></p>
         </section>
 
-       
+        <nav >
+            <a href="#contact" class="links-nav">Contact</a>
+            <a href="#projects" class="links-nav">Projects</a>
+            <a href="#skills" class="links-nav">Skills</a>
+        </nav>
 
-        <article class="introduction">
-            <div class="text">
-                <p>Hi, I'm Marta. <br>
-                I recently graduated from DevelopMe_ Coding Bootcamp. <br>
-                I am passionate about writing clear and well-commented code, self-improvement and mental health awareness.
-            </div>
-            <figure class="figure">
-                <img src="src/assets/images/carbon.png" alt="code-example" class="images image-code"></img>
-            </figure>
-        </article>
+        <a id="skills"><h2>My Skills:</h2></a>
 
-        <h2>My Skills:</h2>
         <section class="abilities">
-            <nav class="skills card-right">
+            <div class="skills card-right">
                 <h4 class="skill-heading">Web Technologies</h4>
                <ul>             
                     <li>PHP</li>
@@ -46,11 +55,12 @@
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>Laravel</li>
-                    <li>React/Redux</li>
+                    <li>React</li>
+                    <li>Redux</li>
                 </ul>
-            </nav>
+            </div>
 
-            <nav class="skills card-center">
+            <div class="skills card-center">
                 <h4 class="skill-heading">Tooling</h4>
                    <ul>             
                     <li>Git</li>
@@ -61,103 +71,108 @@
                     <li>Balsamiq</li>
                     <li>Chrome Developer Tools</li>
                 </ul>            
-            </nav>
+            </div>
             
-            <nav class="skills card-left">
+            <div class="skills card-left">
                 <h4 class="skill-heading">Server-side</h4>
                 <ul>             
                     <li>AWS</li>
                     <li>APIs</li>
                     <li>Blade Templates</li>
                     <li>Database Migration</li>
-                    <li>MYSQL</li><br>
+                    <li>MYSQL</li><br><br>
+                    
                 </ul>
-            </nav>
+            </div>
         </section>
 
         <article class="cards">
-            <h2>My Projects:</h2>
-                
+            <a id="projects"><h2>My Projects:</h2></a>                
                 <div class="card card-right">
                     <h3>PONG</h3>
-                    <p>Technical Challenge</p>
-                    <figure>
+                                <figure>
                         <img src="src/assets/images/pong.png" alt="game-screen-picture" class="images"></img>
                     </figure>
                     <a href="http://52.56.82.215/" class="links">Link</a>
                     <a href="https://github.com/mmkobylin/css_portfolio" class="links">Code</a>                   
 
-                    <p>Tool that randomly creates pairings for a table tennis tournament from names provided by a user</p>
+                    <p class="description">Tool that randomly creates pairings for a table tennis tournament from names provided by a user.</p>
                 </div>
 
                 <div class="card card-center">
                     <h3>Feel Better</h3>
-                    <p>Well-being App</p>
-                    <figure>
+                           <figure>
                         <img src="src/assets/images/feel_better.png"alt="" class="images"></img>
                     </figure>
                     <a href="#" class="links">Link</a>
                     <a href="https://github.com/mmkobylin/feel_better_app" class="links">Code</a>                   
-                    <p>Well-being app, designed to motivate to perform little positive actions throughout each day.</p>
+                    <p class="description">Well-being app, designed to motivate to perform little positive actions throughout each day.</p>
                 </div>
 
                 <div class="card card-left">
                     <h3>Minesweeper</h3>
-                    <p>Game Recreation</p>
-                    <figure>
+                            <figure>
                         <img src="src/assets/images/minesweeper.png" alt="minsweeper-board" class="images"></img>
                     </figure>
                     <a href="https://mmkobylin.github.io/minesweeper/" class="links">Link</a>
                     <a href="https://github.com/mmkobylin/minesweeper" class="links">Code</a>                       
-                    <p>Old fashion minesweeper game, created using JS logic and recursion.</p>
+                    <p class="description">Old fashion minesweeper game, created using JS logic and recursion.</p>
                 </div>
 
                 <div id="card">
-                    <div class="card card-right">
+                    <div class="card card-left">
                         <h3>Calculator</h3>
-                        <p>JS Calculator</p>
-                        <figure>
+                                  <figure>
                             <img src="src/assets/images/calculator.png" alt="pacman-image" class="images"></img>
                         </figure>
                         <a href="https://mmkobylin.github.io/calculator/" class="links">Link</a>
                         <a href="https://github.com/mmkobylin/calculator" class="links">Code</a>                       
-                        <p>Basic calculator, done as a practical project to refresh vanilla JavaScript and DOM.</p>
+                        <br>
+                        <p class="description">Basic calculator, done as a practical project to refresh vanilla JavaScript and DOM.</p>
                     </div>
 
-                    <div class="card card-center">
+                    <div class="card card-right">
                         <h3>Frankenstyle</h3>
-                        <p>Couch Game App</p>
-                        <figure>
+                                   <figure>
                             <img src="src/assets/images/frankenstyle.png"alt="main-screen-picturee" class="images"></img>
                         </figure>
                         <a href="https://olbal.github.io/GroupProject_Front-End/" class="links">Link</a>
                         <a href="https://github.com/mmkobylin/tech_challenge" class="links">Code (backend)</a>                   
-                        <p>Couch game where a person gets assigned a random word, and then in turn they have to draw it. Chinese whispers meets pictionary</p>
+                        <br>
+                        <p class="description">Couch game where a person gets assigned a random word, and then in turn they have to draw it. Chinese whispers meets pictionary.</p>
                     </div>
 
-                    <div class="card card-left">
+                    <div class="card card-center">
                         <h3>PacMan Project</h3>
-                        <p>Game Recreation</p>
-                        <figure>
+                                    <figure>
                             <img src="src/assets/images/pacman.png" alt="pacman-image" class="images"></img>
                         </figure>
                         <a href="https://mmkobylin.github.io/pac-man/" class="links">Link</a>
                         <a href="https://github.com/mmkobylin/Packman" class="links">Code</a>                       
-                        <p>Old fashion pac-man game, created using JS logic.</p>
+                        <br>
+                        <p class="description">Old fashion pac-man game, created using JS logic.</p>
                     </div>
                 </div>
         </article>
        
-    </body>
+   
+        <a id="contact"><h2>Contact</h2></a>
 
+        <section class="contact">
+                <a href="https://github.com/mmkobylin" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>  
+                </a>
+            
+                <a href="mailto:" class="mail">mmkobylin@gmail.com</a>
+                <a href="https://www.linkedin.com/in/marta-kobylinska-8902861b7/" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+        
+        </section>
+
+    </body>
     <footer>
-        <a href="https://github.com/mmkobylin" class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>  
-        </a>
-    
-        <a href="mailto:" class="mail">mmkobylin@gmail.com</a>
-        <a href="https://www.linkedin.com/in/marta-kobylinska-8902861b7/" class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#4A4A4A" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-        </a>
+        <a href="#top" class="links">Top</a>
+        @ Marta Kobylinska 2020
     </footer>
 </html>

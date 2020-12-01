@@ -2,9 +2,9 @@
 
 :root {
 
-    --active-color: #EC4C77;
+    --active-color: #3A405A;
 
-    --background-color-second: #22B2A5;
+    --background-color-second: #3A405A;
 
     --background-color: #FFF0E9;
 
@@ -12,14 +12,11 @@
     
     --border-color: #4A4A4A; 
 
-    --font-primary: 'Enriqueta', serif, 'Lato', sans-serif;
+    --font-primary: 'Source Serif Pro', serif, 'Martel', sans-serif;
 
-    --font-secondary: 'Zilla Slab', serif, 'Enriqueta', serif, 'Lato', sans-serif;
+    --font-secondary: 'Castoro', serif, 'Enriqueta', serif, 'Lato', sans-serif;
 
-    --link-color: #551A8B;
-
-    --gradient-primary: linear-gradient(var(--link-color), var(--active-color));
-
+    --link-color: #000000;
 
 }
 *{
@@ -31,8 +28,11 @@
     text-align: center;
 }
 
-.abilities {
-    width: fit-content;
+a:active, a:hover {
+    color: var(--link-color); 
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 body {
     background-color: var(--body-color); 
@@ -43,40 +43,39 @@ body {
 
 .card { 
     background: var(--background-color);
-    border: double 1rem var(--border-color);
-    border-radius: 3rem;
     padding:1rem;
     padding-bottom:3rem;
-    margin:1.5rem;
+    margin:1rem;
     text-align: center;
-}
 
-.card1 { 
-    background: var(--background-color);
-    border: solid 1rem var(--background-color-second);
-    border-radius: 3rem;
-    padding:1rem;
-    margin:2rem;
-    text-align: center;
 }
 
 .card:hover, ul:hover {
-    -webkit-box-shadow: 3px 18px 5px 6px rgba(0,0,0,0.69);
-    -moz-box-shadow: 3px 18px 5px 6px rgba(0,0,0,0.69);
-    box-shadow: 3px 18px 5px 6px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 3px 0px 18px 25px rgba(0,0,0,0.74); 
+    box-shadow: 3px 0px 18px 25px rgba(0,0,0,0.74);
     transform: translateY(-8px);
 
+}
+
+.contact {
+    margin-top:4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.description {
+    line-height: 1.7;
+    padding-top: 2rem;
 }
 
 footer {
     align-items: center;
     background: var(--background-color-second);
+    clear: both;
     color: var(--background-color);
-    display: flex;
-    font-weight: bold;
-    justify-content: space-around;
-    padding:2rem;
-    margin-bottom:2rem;
+    font-size: 1.35rem;
+    padding:3rem;
+    margin-top:3rem;
 }
 
 .images {
@@ -89,28 +88,20 @@ footer {
     width:12rem;
 }
 
-h1, h2, span {
+h1, h2 {
     color: var(--link-color);
+    font-family:var(--font-primary);
     font-size: 1.4rem;
     line-height: 4rem;
     margin:0.6rem;
 }
 
-h2:active, h2:hover,
-h3:active, h3:hover, 
-span:active, span:hover {
-    color: var(--active-color);
-    text-decoration: underline; 
-};
-
 h3, h4 {
     color: var(--gradient-primary);
+    font-family:var(--font-primary);
     font-size: 1.6rem;
     font-weight: bolder;
-    margin:2rem;
 }
-
-
 
 .introduction { 
     background: var(--background-color);
@@ -128,48 +119,36 @@ h3, h4 {
     padding:1rem;
 }
 
-.links:active, .links:hover {
-    color: var(--active-color);
-    text-decoration: underline; 
-}
-
 .main-info {
     background: var(--background-color);
-    border: double 1rem var(--border-color);
-    border-radius: 3rem;
     padding:1rem;
-    margin:2rem;
+    padding-right:1.3rem;
+    padding-left:1.3rem;
+    margin-bottom:3rem;
+    margin-top:3rem;
+    -webkit-box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7); 
+    box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7);
 }
 
 .mail {
-    color: var(--background-color);
+    color: var(--font-secondary);
     font-size: 1rem;
 }
 
-.mail:active, .mail:hover {
-    color: var(--active-color);
-}
-
-.nav-header {
-    align-items: center;
-    background: var(--background-color-second);
-    color: var(--background-color);
+nav {
     display: flex;
-    font-weight: bold;
-    justify-content: space-between;
-    padding: 1rem;
-    padding-bottom: 2rem;
-    padding-top:2rem;
+    justify-content: space-around;
     margin-bottom:2rem;
 }
 
+
 p {
     line-height: 2rem;
-    padding-top:2rem;
 }
 
+
 svg {
-    background-color: var(--background-color);
+    background-color: var(--body-color);
     border-radius: 1rem;
     height: 2.5rem;
     padding:0;
@@ -177,12 +156,13 @@ svg {
     
 }
 
-.skills {
-    font-family: var(--font-secondary);
+svg:active, svg:hover {
+    fill: var(--link-color);
+    background-color: var(--background-color);
 }
 
-svg:active, svg:hover {
-    background-color: var(--active-color);
+.skills {
+    font-family: var(--font-secondary);
 }
 
 .text {
@@ -194,6 +174,11 @@ svg:active, svg:hover {
 
 ul { 
     list-style-type: none;
+    background: var(--background-color);
+    border: solid 1rem var(--background-color-second);
+    border-radius: 3rem;
+    padding:1rem;
+    margin:2rem;
 }
 
 
@@ -210,16 +195,44 @@ ul {
     }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:800px) and (max-width:1200px) 
+    {
+        h1 {
+            color:red;
+            font-size: 2rem;
+            line-height: 2.5;
+
+        }
+
+        .main-info {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        p, li {
+            font-size: 1rem;
+        }
+
+        .text {
+            font-size: 1rem;
+            line-height: 2.4;
+        }
+    }
+
+
+@media screen and (min-width:801px) {
     *{
         font-size:1.3rem;
-        margin:0; 
+        margin:2; 
     }
 
     body {
         background-color: var(--body-color); 
     }
 
+    .card {  
+        -webkit-box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7); 
+        box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7);
+    }
    
     .card-left {
         float: left; 
@@ -235,13 +248,13 @@ ul {
         display: inline-block; 
         width: 30%; 
     }
+    #contact {
+        font-size: 3rem;
 
-    h1 {
-        font-size: 3.5rem;
-        line-height: 7rem;
+        margin-top:6.5rem;
+        margin-bottom:0;
     }
-    
-    h2, span {
+    h2 {
         font-size: 2.5rem;
         padding-bottom:2rem;
         margin-top:1.5rem;
@@ -254,6 +267,7 @@ ul {
         font-size: 1,5rem;
         padding:1rem;
     }
+
     .images {
         height: 7rem;
         object-fit:cover;
@@ -268,20 +282,27 @@ ul {
     }
     
     .mail {
-        color: var(--background-color);
-        font-size: 1.7rem;
+        font-size: 2.4rem;
     }
 
-    .main-info {
-        margin-left: 7rem;
-        margin-right: 7rem;
+    nav {
+        margin-top:4rem;
+        margin-bottom:9rem;
     }
+
     
+    .links-nav {
+        font-size: 2rem;
+        ;
+    }
+
+    p {
+        line-height: 3rem;
+    }
     .text{
         align-items:center;
         display: flex;
         justify-content: flex-end;
-        line-height: 4rem;
         margin:3rem;
     }
 
@@ -308,78 +329,28 @@ ul {
 }
 
 
-@media screen and (min-width:701px) and (max-width: 1299px) {
-
-    ul {
-        width: 20rem;
-    }
-    
-}
-
-@media screen and (min-width:1400px) {
-
-    .abilities {
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        text-align: center;
-    }
-    
-    .skills {
-        align-items: top;
-        display: inline-grid;
-        justify-items: center;
-    }
-    
-
-    .skill-one {
-        grid-column: 1/2;
-        grid-row: 1/3;
-        line-height: 4rem;
-    }
-    .skill-two {
-        grid-column: 4/5;
-        grid-row: 1/3;
-    }
-
-    .skill-three {
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-
-    .skill-four {
-        grid-column: 3/4;
-        grid-row: 1/3;
-    }
-
-    ul {
-        width: 15rem;
-    }
-}
-
-@media screen and (min-width:900px) {
-
-    .abilities {
-    
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    
-    .skills {
-        line-height: 2rem;   
-        display: inline-grid;
-        align-items: top;
-    }
-}
-
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1201px) {
     .images {
         height:13rem;
         margin:1rem;
         object-fit:cover;
         width:13rem;
     }
+    
+    .main-info {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 7rem;
+    }
+    
+    .text {
+        font-size: 1.3rem;
+        line-height: 4;
+    }
+
 }
 
 @media screen and (min-width:1300px) {
@@ -405,7 +376,8 @@ ul {
 
 
 @import '_settings.css';
-@import './_typography.css';
+@import '_body.css';
+@import '_typography.css';
 @import './_header.css';
 @import './title.css';
 @import './_cards.css';
