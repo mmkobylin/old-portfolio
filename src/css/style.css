@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-.links {
+.links, .links-nav {
     background:
        linear-gradient(
          to bottom, var(--main-color) 0%,
@@ -36,23 +36,24 @@
        );
     background-position: 0 100%;
     background-repeat: repeat-x;
-    background-size: 4px 4px;
+    background-size: 7px 5px;
     color: var(--link-color);
     text-decoration: none;
     transition: background-size .4s;
   }
   
-  .links:active, .links:hover {
-    background-size: 10px 70px;
+  legend, span {
+    font-size: 2rem;
 }
 
-.links-nav:active, .links-nav:hover {
-    font-weight: bold;
-    color: var(--active-color);
-    font-size:1.3rem;
-    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
-    transform: translateY(-8px);
-} 
+.links-nav {
+    font-size: 2rem;
+}
+
+.links:active, .links:hover, .links-nav:active, .links-nav:hover {
+    background-size: 20px 70px;
+}
+
 
 body {
     background-color: var(--body-color); 
@@ -292,14 +293,6 @@ ul, li {
         transform: rotate(90deg);
     }
 
-    legend, span {
-        font-size: 2rem;
-    }
-
-    .links:active, .links:hover {
-        font-size:1.5rem;
-    }
-
     body {
         background-color: var(--body-color); 
     }
@@ -372,15 +365,17 @@ ul, li {
         margin-bottom:9rem;
     }
 
-    
-    .links-nav {
+    legend, span {
         font-size: 2rem;
-        ;
     }
 
-    .links-nav:active, .links-nav:hover  {
-        font-size:2.3rem;
-        transform: translateY(-8px);
+    .links-nav {
+        font-size: 3rem;
+        line-height: 2;
+    }
+
+    .links-nav:active, .links-nav:hover {
+        background-size: 20px 120px;
     }
 
     p {
@@ -445,7 +440,8 @@ ul, li {
     
     .text {
         font-size: 1.3rem;
-        line-height: 4;
+        line-height: 2;
+        padding:2rem;
     }
 
 }
@@ -470,6 +466,8 @@ ul, li {
 }
 
 @media screen and (min-width:900px) and (max-width:1201px) {
+
+    
     fieldset {
         height: 15rem;
         width: 15rem;
@@ -540,6 +538,11 @@ ul, li {
 }
 @media screen and (max-width:400px) {
 
+    
+    fieldset {
+        height:fit-content;
+        width: 15rem;
+    }
 
     .images {
         height:7rem;
@@ -548,10 +551,10 @@ ul, li {
         width:7rem;
     }
 
-    fieldset {
-        height:fit-content;
-        width: 15rem;
+    .links-nav {
+        font-size: 1.5rem;
     }
+    
     
     
 }
