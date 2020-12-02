@@ -8,12 +8,10 @@
 
         <meta name="description" content="portfolio"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500&family=Martel:wght@300;600;800&family=Source+Serif+Pro:wght@300;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,700;1,300;1,400&family=Castoro:ital@0;1&display=swap" rel="stylesheet">        <!-- adding sass -->
-        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@300;600;800&family=Source+Serif+Pro:wght@300;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap" rel="stylesheet">        <!-- adding sass -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-        <!-- <script defer src="https://mmkobylin.github.io/src/js/jquery.js"></script> -->
+        <script defer src="https://mmkobylin.github.io/src/js/jquery.js"></script>
 
         <style>
             @import url('src/css/style.css');
@@ -42,44 +40,43 @@
 
         <a id="skills"><h2>My Skills:</h2></a>
 
-        <section class="abilities">
-            <div class="skills card-right">
-                <h4 class="skill-heading">Web Technologies</h4>
-               <ul>             
+        <section class="skill-section">
+            
+            <fieldset>                
+                <legend>Tooling</legend>
+                <ul>
+                    <li>Git & GULP</li>
+                    <li>npm</li>
+                    <li>VS Code</li>
+                    <li>Vagrant</li>
+                    <li>Balsamiq Cloud </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>               
+                <legend><span class="subtitle1">Web Tech</span><span class="subtitle2">nology</span></legend>
+                <ul>
                     <li>PHP</li>
                     <li>HTML5</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>Laravel</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                </ul>
-            </div>
+                    <li>React & Redux</li>
+                </ul> 
+            </fieldset>
 
-            <div class="skills card-center">
-                <h4 class="skill-heading">Tooling</h4>
-                   <ul>             
-                    <li>Git</li>
-                    <li>Gulp</li>
-                    <li>npm</li>
-                    <li>VS Code</li>
-                    <li>Vagrant</li>
-                    <li>Balsamiq</li>
-                    <li>Chrome Developer Tools</li>
-                </ul>            
-            </div>
             
-            <div class="skills card-left">
-                <h4 class="skill-heading">Server-side</h4>
-                <ul>             
+            <fieldset>
+                <legend>Server-side</legend>
+                <ul>
                     <li>AWS</li>
                     <li>APIs</li>
                     <li>Blade Templates</li>
                     <li>Database Migration</li>
-                    <li>MYSQL</li><br><br>
-                    
+                    <li>MYSQL</li>
                 </ul>
-            </div>
+            </fieldset>
+
         </section>
 
         <article class="cards">
