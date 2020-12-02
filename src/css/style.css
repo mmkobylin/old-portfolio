@@ -4,7 +4,7 @@
 
     --active-color: #3A405A;
 
-    --background-color-second: #3A405A;
+    --main-color: #00A6A6;
 
     --background-color: #fbf7f5;
 
@@ -28,13 +28,32 @@
     text-align: center;
 }
 
-a:active, a:hover {
+.links {
+    background:
+       linear-gradient(
+         to bottom, var(--main-color) 0%,
+         var(--main-color) 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: background-size .4s;
+  }
+  
+  .links:active, .links:hover {
+    background-size: 10px 70px;
+    font-weight: bolder;
+}
+
+.links-nav:active, .links-nav:hover {
     font-weight: bold;
     color: var(--active-color);
     font-size:1.3rem;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
     transform: translateY(-8px);
-}
+} 
 
 body {
     background-color: var(--body-color); 
@@ -79,7 +98,7 @@ body {
 
 footer {
     align-items: center;
-    background: var(--background-color-second);
+    background: var(--main-color);
     clear: both;
     color: var(--background-color);
     font-size: 1.2rem;
@@ -88,7 +107,7 @@ footer {
 }
 
 .images {
-    border: solid 0.5rem var(--background-color-secondary);
+    border: solid 0.5rem var(--main-colorary);
     border-radius: 1.5rem;
     height: 12rem;
     margin:2rem;
@@ -192,7 +211,7 @@ svg:active, svg:hover {
 ul { 
     list-style-type: none;
     background: var(--background-color);
-    border: solid 1rem var(--background-color-second);
+    border: solid 1rem var(--main-color);
     border-radius: 3rem;
     padding:1rem;
     margin:2rem;
