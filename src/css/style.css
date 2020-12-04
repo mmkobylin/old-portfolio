@@ -102,6 +102,16 @@ fieldset {
     box-sizing: border-box; 
     height: fit-content;
     margin:2rem;
+    -webkit-transition: 2s; /* For Safari 3.0 to 6.0 */
+    transition: 2s; /* For modern browsers */
+
+  }
+
+  fieldset:hover {
+    border-color: var(--active-color);
+    border-top-color: var(--link-color);
+    background: var(--background-color);
+    color: var(--active-color);
   }
 
 
@@ -151,10 +161,15 @@ h3, h4 {
     text-align: left;
 }
 
-legend, span{
+legend {
     font: 1.5rem var(--font-secondary); 
-    margin: auto; 
-    padding: 0 4px; 
+    margin: 0 4px;
+    padding: 2;
+}
+
+span{
+    font: 1.5rem var(--font-secondary); 
+
   } 
   
   
@@ -229,10 +244,18 @@ svg:active, svg:hover {
 
 ul, li { 
     list-style-type: none;
-    margin-right:3%;
-    transform: rotate(0deg);
+    margin-right:3%; 
+    -webkit-transition: 2s; /* For Safari 3.0 to 6.0 */
+    transition: 2s; /* For modern browsers */  
 }
 
+fieldset:hover>ul {
+    transform: translateX(-12px) rotate(0deg);;
+  }
+
+/* ul:hover {
+    transform: translateX(-12px) rotate(0deg);;
+} */
 
 @media screen and (max-width:699px) {
 
@@ -285,7 +308,12 @@ ul, li {
     }
 
     fieldset {
-        transform: rotate(-90deg)
+        transform: rotate(-90deg);
+    }
+
+    fieldset:hover{
+        transform: rotate(-90deg);
+        transform: translateX(12px);
     }
 
     ul { 
