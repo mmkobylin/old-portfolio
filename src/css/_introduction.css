@@ -10,10 +10,12 @@
 }
 
 
-@media screen and (min-width:700px) {
-    .introduction{
+
+@media screen and (min-width:801px) {
+  
+    .introduction {
         display: flex;
         margin-left: 7rem;
         margin-right: 7rem;
     }
-}
+}  

@@ -1,0 +1,16 @@
+.subtitle1 {
+    margin:0;
+    padding:0;
+}
+
+.subtitle2 {
+    display: none;
+    margin:0;
+    padding:0;
+}
+
+@media screen and (min-width:1361px) {
+    .subtitle2 {
+        display: inline;
+    }
+}

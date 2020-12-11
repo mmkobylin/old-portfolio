@@ -1,10 +1,28 @@
 footer {
     align-items: center;
-    background: var(--background-color-second);
+    background: var(--background-color);
     clear: both;
     color: var(--background-color);
-    font-size: 1.5rem;
-    padding:3rem;
-    margin-top:3rem;
+    margin-top: 5rem;
+    padding-bottom:1rem;
+    padding-top:2rem;
+    -webkit-box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7); 
+    box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7);
 }
 
+ .copyright{
+    font-size: 0.8rem;
+}
+
+@media screen and ( min-width:801px ) {
+
+    footer {
+        margin-top: 6rem;
+        padding-top:3rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        padding-top:2rem;
+    }
+}

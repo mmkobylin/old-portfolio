@@ -1,22 +1,56 @@
-
-body {
-    font-family: var(--font-secondary); 
-    font-size: 1.35rem;
-    color: var(--font-color);
-};
-
-.paragraph {
-    font-family: var(--font-secondary);
+*{
+    color: var(--border-color);
+    font-family:var(--font-secondary);
+    font-size:1.1rem;
+    line-height: 2rem;
+    margin:0;
+    text-align: center;
 }
 
-.links {
-    font-family: var(--font-secondary); 
+p {
+    line-height: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--base-font-color);
-    font-family: var(--font-primary);
+@media screen and (max-width:699px) {
 
-};
+    body {
+        background-color: var(--body-color); 
+    }
+    h3 {
+        color: var(--link-color);
+        font-weight: bolder;
+        font-size: 1.7rem;
+        padding:2rem;
+    }
+}
+
+@media screen and (min-width:801px) {
+    *{
+        font-size:1.3rem;
+        margin:2; 
+    }
+
+    body {
+        background-color: var(--body-color); 
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) 
+    {
+
+        p  {
+            font-size: 1rem;
+        }
+
+    }
+
+@media screen and (min-width:801px) {
+  
+    p {
+        line-height: 3rem;
+    }
+
+}
 
 

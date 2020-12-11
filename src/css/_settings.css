@@ -1,18 +1,24 @@
 :root {
+
+    --active-color: #3A405A;
+
     --background-color-second: #22B2A5;
 
-    --background-color: #FFF0E9;
+    --background-color: #fbf7f5;
 
-    --body-color:#dfd0c9; 
+    --body-color:#dfd0c9;
     
     --border-color: #4A4A4A; 
 
-    --font-secondary: 'Zilla Slab', serif;
+    --font-primary: 'Source Serif Pro', serif, 'Martel', sans-serif;
 
-    --font-primary: 'Enriqueta', serif;
+    --font-secondary: 'Castoro', serif, 'Enriqueta', serif, 'Lato', sans-serif;
 
     --link-color: #551A8B;
 
+    --main-color: #00A6A6;
+
+    
 }
 
 

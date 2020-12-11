@@ -1,18 +1,87 @@
-a {
-    color:var(--background-color-second);
-    text-decoration: none;
-    font-weight:bolder; 
-    padding:1.5rem;
+.links {
+    font-family: var(--font-secondary); 
+    padding:1rem;
 }
 
-h2:active, h2:hover,
-h3:active, h3:hover,
-a:active, a:hover {
-    color:#EC4C77;
-
-};
+.links  {
+    background:
+       linear-gradient(
+         to bottom, var(--main-color) 0%,
+         var(--main-color) 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 7px 5px;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: background-size .4s;
+  }
+  
+.links-nav {
+    font-size: 2rem;
+}
 
 .links:active, .links:hover {
-    color:#EC4C77;
+    background-size: 20px 70px;
+}
 
-};
+
+
+a.gifts {
+    color:var(--base-color);
+    text-decoration:none;
+    padding-left:2rem;
+    padding-right:2rem;
+    position: relative;
+}
+
+.links-nav {
+    color:var(--base-color);
+    text-decoration:none;
+    font: 1.5rem;
+    padding:1rem;
+    position: relative;
+}
+
+.links-nav:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  bottom: 0px;
+  left: 0;
+  /* to change from going right to left, to left to right, delete right:0 and apply left:0 */
+  /*  to change to come from the middle here use transform: scaleX(0);
+  and in hover use   transform: scaleX(1); */
+  background-color: var(--main-color);
+  visibility: hidden;
+  transition: all 0.8s ease-in-out;
+}
+
+.links-nav:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .links-nav:hover {
+    color: var(--main-color);
+    transition: all 0.8s ease-in-out;
+  }
+
+@media screen and (min-width:801px) {
+
+    .links-nav {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .links-nav {
+        font-size: 1.2rem;
+        padding:0.5rem;
+    }
+    
+}

@@ -1,5 +1,7 @@
 body {
-    background:var(--body-color);
-    margin:0;
-    text-align:center;
+    background-color: var(--body-color); 
+    color: var(--font-color);
+    font-family: var(--font-secondary); 
+    font-size: 1.35rem;
 }
+

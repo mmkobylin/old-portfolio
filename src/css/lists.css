@@ -1,8 +1,0 @@
-ul { 
-    list-style-type: none;
-    background: var(--background-color);
-    border: solid 1rem var(--background-color-second);
-    border-radius: 3rem;
-    padding:1rem;
-    margin:2rem;
-}

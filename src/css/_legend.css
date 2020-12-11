@@ -1,0 +1,22 @@
+legend {
+    font: 1rem var(--font-secondary); 
+    margin: 0 4px;
+}
+
+@media screen and  (min-width:900px) and (max-width:1300px) {
+
+    legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+
+    }
+}
+
+@media screen and  (min-width:1301px) {
+
+    legend {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+}

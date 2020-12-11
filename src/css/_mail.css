@@ -1,0 +1,44 @@
+.mail {
+    color: var(--font-secondary); 
+    font-size: 1rem;
+    transition-duration: 0.5s;
+}
+
+.mail:active, .mail:hover {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    filter: drop-shadow(8px 8px 10px var(--border-color))
+  }
+  
+  @media (-webkit-min-device-pixel-ratio:0) {
+      .mail {
+        background-color: var(--background-color);
+        background-image: -webkit-linear-gradient(left, var(--main-color) 0%, var(--link-color) 50%, transparent 50%);
+        background-position: 100% 0;
+        background-size: 200% 200%;
+        /* speed of transition */
+        -webkit-transition: .4s .4s;
+        /* this is what shows up; in this case - text */
+        -webkit-background-clip: text;
+      }
+
+      .mail:hover {
+        background-position: 0 0;
+        color: transparent;
+        transition: .4s 0;
+      }
+    }
+  
+
+@media screen and (min-width:801px) {
+  
+    .mail {
+        font-size: 2rem;
+    }
+    
+    .mail:active, .mail:hover {
+        font-size: 2.4rem;
+        transform: translateY(15px);
+
+    }
+} 

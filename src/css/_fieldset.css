@@ -1,0 +1,71 @@
+fieldset {
+    background: var(--background-color);
+    border: solid 1rem var(--main-color);
+    border-radius: 4rem;
+    box-sizing: border-box; 
+    height: fit-content;
+    /* margin:2rem; */
+    -webkit-transition: 2s; /* For Safari 3.0 to 6.0 */
+    transition: 2s; /* For modern browsers */
+
+  }
+
+  fieldset:hover {
+    border-color: var(--active-color);
+    border-top-color: var(--link-color);
+    background: var(--background-color);
+    color: var(--active-color);
+  }
+
+  fieldset:hover>ul {
+    transform: translateX(-12px) rotate(0deg);;
+  }
+  
+  @media screen and (min-width:801px) {
+  
+    fieldset {
+        transform: rotate(-90deg);
+    }
+
+    fieldset:hover{
+        transform: rotate(-90deg);
+        transform: translateX(12px);
+    }
+  }
+
+  @media screen and (min-width:900px) and (max-width:1099px) 
+  {
+      fieldset {
+          height: 15rem;
+          width: 15rem;
+      }
+  }
+
+  
+@media screen and (min-width:1100px) and (max-width:1300px) 
+{
+    fieldset {
+        height: 16rem;
+        width: 15rem;
+    }
+}
+
+  @media screen and (min-width:1500px) {
+
+    
+    fieldset {
+        height: 20rem;
+        width: 20rem;
+    }
+
+}
+@media screen and (max-width:700px) {
+
+    fieldset {
+        height: fit-content;
+        width: 84%;
+        margin: 8%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+}

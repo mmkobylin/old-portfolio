@@ -1,0 +1,25 @@
+.contact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:2rem;
+    margin-top:3rem;
+}
+
+#contact {
+    margin:0;
+    padding:0
+}
+
+@media screen and (min-width:801px) {
+
+    .contact {
+        margin-bottom:0.5rem;
+        margin-top:0.5rem;
+    }
+
+    #contact {
+        font-size: 3rem;
+        padding-top:6.5rem;
+        margin-bottom:0;
+    }
+}

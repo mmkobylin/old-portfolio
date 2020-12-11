@@ -4,6 +4,17 @@
     text-align: center;
 }
 
+@media screen and (min-width:800px) and (max-width:1200px) 
+    {
+        .text {
+            font-size: 1rem;
+            line-height: 2.4;
+            align-items:center;
+            display: flex;
+            justify-content: flex-end;
+            margin:3rem;
+        }
+    }
 
 @media screen and (min-width:700px) {
 
@@ -11,7 +22,27 @@
         display: flex;
         align-items:center;
         justify-content: flex-end;
-        line-height: 4rem;
+        line-height: 2.5rem;
         margin:3rem;
+    }
+}
+
+
+
+@media screen and (min-width:1201px) {
+    
+    .text {
+        font-size: 1.3rem;
+        line-height: 2;
+        padding:2rem;
+    }
+
+}
+
+@media screen and (max-width:400px)
+{
+
+    .text {
+        padding: 1.5rem;;
     }
 }

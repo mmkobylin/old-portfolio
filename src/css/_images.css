@@ -1,0 +1,61 @@
+.images {
+    border: solid 0.5rem var(--main-colorary);
+    border-radius: 1.5rem;
+    height: 12rem;
+    margin:2rem;
+    object-fit:cover;
+    text-align: center;  
+    width:12rem;
+}
+
+@media screen and (min-width:801px) {
+  
+    .images {
+        height: 7rem;
+        object-fit:cover;
+        margin:0.5rem;
+        width: 7rem;
+    }
+}
+
+
+@media screen and (max-width:1199px) {
+    .image-code {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:1300px) {
+
+    .image-code {
+        height:23rem;
+        margin:1rem;
+        object-fit:cover;
+        width:23rem;
+    }
+}
+
+@media screen and (min-width:1201px) {
+
+    .images {
+        height:13rem;
+        margin:1rem;
+        object-fit:cover;
+        width:13rem;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .images {
+        height:7rem;
+        margin:1rem;
+        object-fit:cover;
+        width:7rem;
+    }
+    
+}
+
+
