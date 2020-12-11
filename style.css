@@ -596,6 +596,21 @@ a.gifts {
     box-shadow: 3px 0px 21px 16px rgba(0,0,0,0.7);
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:2rem;
+}
+
+@media screen and (min-width:801px) {
+  
+
+    nav {
+        margin-top:4rem;
+        margin-bottom:5rem;
+    }
+
+}
 
 .nav-header {
     align-items: center;
