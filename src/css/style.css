@@ -1,5 +1,6 @@
-@import "./src/css/_variables.css";
-@import "./src/css/_settings.css";
+@import url("_variables.css");
+@import url("_settings.css");
+
 
 @import "./src/css/_a.css";
 @import "./src/css/_body.css";
