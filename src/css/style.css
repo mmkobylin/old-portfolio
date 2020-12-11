@@ -1,31 +1,31 @@
-@import "_variables.css";
-@import "_typography.css";
+@import "./src/css/_variables.css";
+@import "./src/css/_settings.css";
 
-@import "_a.css";
-@import "_body.css";
-@import './_cards.css';
-@import './_contact.css';
-@import "_description.css";
-@import "_fieldset.css";
-@import './_footer.css';
-@import '_images.css';
-@import "_introduction.css";
-/* @import '_fieldset.css'; */
-@import '._legend.css';
-@import './_li.css';
-@import './_links.css';
-@import './_mail.css';
-@import './_main-info.css';
-@import './_nav.css';
-@import './_nav-header.css';
-@import '_settings.css';
-@import './_skills.css';
-@import './_span.css';
-@import './_subtitle.css';
-@import './_svg.css';
-@import './_text.css';
-@import './_titles.css';
-@import './_ul.css';
+@import "./src/css/_a.css";
+@import "./src/css/_body.css";
+@import "./src/css/_cards.css";
+@import "./src/css/_contact.css";
+@import "./src/css/_description.css";
+@import "./src/css/_fieldset.css";
+@import "./src/css/_footer.css";
+@import "./src/css/_images.css";
+@import "./src/css/_introduction.css";
+/* @import "./src/css/_fieldset.css"; */
+@import "._legend.css";
+@import "./src/css/_li.css";
+@import "./src/css/_links.css";
+@import "./src/css/_mail.css";
+@import "./src/css/_main-info.css";
+@import "./src/css/_nav.css";
+@import "./src/css/_nav-header.css";
+@import "./src/css/_settings.css";
+@import "./src/css/_skills.css";
+@import "./src/css/_span.css";
+@import "./src/css/_subtitle.css";
+@import "./src/css/_svg.css";
+@import "./src/css/_text.css";
+@import "./src/css/_titles.css";
+@import "./src/css/_ul.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600&family=Lato&family=Zilla+Slab:ital,wght@0,300;0,500;0,700;1,500;1,700&display=swap");
 
