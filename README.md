@@ -2,6 +2,5 @@
 
 A portfolio website built to practice HTML, CSS and Javascript.
 
-View the live version [here](https://mmkobylin.github.io).
-
-Mobile and desktop friendly. 
+Mobile and desktop friendly old portofolio. Find new one on [here](https://mmkobylin.github.io).
+. 
